@@ -1,0 +1,15 @@
+.logo {
+  position: relative;
+  top: -2px;
+  left: 25px;
+}
+
+.logo a {
+  font-size: 2rem;
+  color: var(--white);
+  letter-spacing: 1.1px;
+  font-family: var(--tangerine);
+  font-weight: 700;
+  text-shadow: 3px 3px 3px rgba(170, 170, 170, 0.7);
+  text-decoration: none;
+}

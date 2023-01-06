@@ -1,0 +1,25 @@
+:root {
+  scroll-behavior: smooth;
+  font-size: 18px;
+  --menosWhite: #eeeef4;
+  --blueN: #2e456f;
+  --pielcita: #e7ddb4;
+  /* --brown: #404041; */
+  --bgInput: #f9f8ff;
+  --blue: #131c3a;
+  --brown: #202020;
+  /* PALETA DE COLORES */
+  --white: #f5f5f5;
+  --dorao: #d8b576;
+  --rosa: #f0c0b2;
+  --pielcita: #ffe2c3; /* PRODUCTOS */
+  --marron: #883c3c; /* PRODUCTOS */
+  --grey: #c7cdd7;
+  --verdeAgua: #51716e; /* PRODUCTOS */
+  --oscuro: #252b35; /* DETALLE */
+  --montserrat: "Montserrat", sans-serif;
+  --roboto: "Roboto", sans-serif;
+  --tangerine: "Tangerine", cursive; /* LOGO */
+  --quicksand: "Quicksand", sans-serif; /* CARD */
+  --philosopher: "Philosopher", sans-serif;
+}

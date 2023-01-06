@@ -1,0 +1,85 @@
+@media only screen and (max-width: 320px) {
+  body {
+    width: 100%;
+  }
+
+  /* NAV */
+  .close-menu,
+  .hamburger {
+    display: block;
+  }
+  .hamburger {
+    position: absolute;
+    z-index: 9;
+    right: 15px;
+    top: 11px;
+    cursor: pointer;
+  }
+
+  .close-menu {
+    position: fixed;
+    z-index: 21;
+    top: 11px;
+    right: 15px;
+    transform: translateX(150%);
+    transition: all 0.3s ease-in;
+  }
+  .overlay {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 10;
+    left: 0;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(2.5px);
+    visibility: visible;
+    transform: translateX(-110%);
+    transition: all 0.3s ease-in;
+  }
+  .nav {
+    border: 1px solid red;
+  }
+
+  /* NAV DE LADO DERECHO */
+  .nav .list {
+    width: 90%;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 0;
+    z-index: 20;
+    position: fixed;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    background-color: var(--oscuro);
+    transform: translateX(150%);
+    transition: all 0.3s ease-in;
+  }
+  .navigation .navigation__list.show-menu {
+    transform: translateX(0%);
+    transition: all 0.3s ease-in;
+  }
+  .show {
+    transform: translateX(0%);
+    transition: all 0.3s ease-in;
+  }
+  /* NAV DE ABAJAO */
+  .nav-bottom {
+    border: 1px solid red;
+    position: fixed;
+    background-color: var(--verdeAgua);
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    padding: 10px 10px;
+    width: 100%;
+  }
+  .nosotros {
+    overflow: hidden;
+  }
+}
