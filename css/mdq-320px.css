@@ -1,4 +1,4 @@
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 375px) {
   body {
     width: 100%;
   }
@@ -7,20 +7,18 @@
   .close-menu,
   .hamburger {
     display: block;
+    top: 13px;
+    right: 15px;
+    cursor: pointer;
   }
   .hamburger {
     position: absolute;
     z-index: 9;
-    right: 15px;
-    top: 11px;
-    cursor: pointer;
   }
 
   .close-menu {
     position: fixed;
     z-index: 21;
-    top: 11px;
-    right: 15px;
     transform: translateX(150%);
     transition: all 0.3s ease-in;
   }
@@ -41,9 +39,16 @@
   }
   .nav {
     border: 1px solid red;
+    height: 60px;
+  }
+  .nav .logo {
+    left: 15px;
+  }
+  .nav .logo a {
+    font-size: 1.7rem;
   }
 
-  /* NAV DE LADO DERECHO */
+  /* NAV DE ABAJO */
   .nav .list {
     width: 90%;
     height: 100vh;
@@ -82,5 +87,13 @@
   }
   .nosotros {
     overflow: hidden;
+  }
+
+  /* HERO */
+  .hero {
+    margin: 110px auto 0;
+    border: 1px solid red;
+    width: 90%;
+    height: calc(100% - 300px);
   }
 }

@@ -148,7 +148,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 20px;
 }
 .productos .container {
   width: calc(97% - 22px);
@@ -243,7 +242,7 @@ body {
 /* SECCION NOSOTROS */
 
 .container.c-nosotros {
-  padding: 20px 0;
+  padding: 40px 0;
 }
 
 .nosotros {
@@ -288,7 +287,7 @@ body {
 .contact {
   background: var(--verdeAgua);
   width: 100%;
-  margin: 50px 0;
+  margin: 0 auto;
   padding: 20px 0 60px;
 }
 
