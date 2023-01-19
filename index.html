@@ -9,7 +9,10 @@
   <!-- STYLES -->
   <link rel="stylesheet" href="./css/index.css">
   <!-- MEDIA QUERIES -->
-  <link media="print" onload="this.media='all'" rel="stylesheet" media="(min-width: 375px)" href="./css/mdq-320px.css">
+  <link media="print" onload="this.media='all'" rel="stylesheet" media="(max-width: 320px)"
+    href="./css/media-query/mdq-320px.css">
+  <!-- <link media="print" onload="this.media='all'" rel="stylesheet" media="(max-width: 375px)"
+    href="./css/media-query/mdq-375px.css"> -->
   <title>Joyeria CyS</title>
   <!-- FONTS -->
   <!-- MONTSERRAT 300 400 500 700 -->
@@ -156,11 +159,8 @@
         <hr>
         <p class="text">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid mollitia ducimus repellendus molestias?
-          Dignissimos odit fugit ut voluptatem quibusdam? Id rerum eveniet officiis voluptatem at, suscipit laudantium
-          obcaecati dignissimos cum adipisci nulla eius tenetur consequatur dolorum magni autem. Quis, a!
           <br><br>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio magni, necessitatibus excepturi mollitia iure,
-          nisi quidem esse accusantium officiis rerum consequuntur, quaerat minus doloremque non.
+          Dignissimos odit fugit ut voluptatem quibusdam? Id rerum eveniet officiis voluptatem at, suscipit laudantium
         </p>
       </div>
     </section>
@@ -226,18 +226,23 @@
         <form class="form contact__form__left" role="form" method="POST">
           <label for="nombre">
             <span>Nombre</span>
-            <input type="text" name="nombre" placeholder="Ingrésa tu nombre"
+            <input type="text" name="nombre" id="nombre" placeholder="Ingrésa tu nombre"
               title="Nombre sólo acepta letras y espacios en blanco" minlength="2" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$"
               required>
           </label>
           <label for="email">
             <span>E-mail</span>
-            <input type="email" name="email" placeholder="Ingrésa tu email" title="Email incorrecto"
+            <input type="email" name="email" id="email" placeholder="Ingrésa tu email" title="Email incorrecto"
               pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" required>
           </label>
           <label for="asunto">
             <span>Asunto</span>
-            <input list="asunto" name="asunto" title="El asunto es requerido" required>
+            <input type="text" list="asuntos" id="asunto" name="asunto" title="El asunto es requerido" required>
+            <datalist id="asuntos">
+              <option value="relojes">Relojes</option>
+              <option value="alianzas">Alianzas</option>
+              <option value="joyeria">Joyeria</option>
+            </datalist>
           </label>
           <label for="mensaje">
             <span>Tu mensaje</span>
@@ -270,25 +275,45 @@
         </div>
       </div>
     </section>
-    <!-- FOOTER -->
-    <footer>
-      <div class="container">
-        <div class="footer">
-          <p class="footer-text">
-            <strong>Copyright ©️ 2022 Joyas CyS. Todos los derechos reservados.</strong>
-            <br>
-            El uso de este sitio queda bajo observación de Joyas CyS. <br>
-            Las fotos son a modo ilustrativo. La venta de cualquiera de los productos publicados está sujeta a la
-            verificación de stock. <br>
-            Precios sujetos a cambios sin previo aviso.
-          </p>
-          <div class="logo">
-            <a href="index.html">Joyeria CyS</a>
-          </div>
+  </div>
+  <!-- SOCIAL MEDIA -->
+  <div class="social">
+    <div class="container">
+      <div class="wspp">
+        <a href="https://wa.me/541171027530" target="_blank">
+          <img src="./icons/whatsapp-logo-24.png" alt="">
+        </a>
+      </div>
+      <div class="facebook">
+        <a href="#" target="_blank">
+          <img src="./icons/facebook-logo-24.png" alt="">
+        </a>
+      </div>
+      <div class="instagram">
+        <a href="#" target="_blank">
+          <img src="./icons/instagram-logo-24.png" alt="">
+        </a>
+      </div>
+    </div>
+  </div>
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer">
+        <p class="footer-text">
+          <strong>Copyright ©️ 2022 Joyas CyS. Todos los derechos reservados.</strong>
+          <br>
+          El uso de este sitio queda bajo observación de Joyas CyS. <br>
+          Las fotos son a modo ilustrativo. La venta de cualquiera de los productos publicados está sujeta a la
+          verificación de stock. <br>
+          Precios sujetos a cambios sin previo aviso.
+        </p>
+        <div class="logo">
+          <a href="index.html">Joyeria CyS</a>
         </div>
       </div>
-    </footer>
-  </div>
+    </div>
+  </footer>
 
   <script src="./js/index.js" type="module"></script>
 </body>
