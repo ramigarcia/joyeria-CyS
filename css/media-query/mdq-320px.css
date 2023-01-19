@@ -156,20 +156,4 @@
     margin-top: 5px;
     margin-bottom: 5px;
   }
-  /* REDES SOCIALES */
-  .social {
-    background-color: #000;
-    padding: 10px;
-    display: grid;
-    place-items: center;
-  }
-  .social .container {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  .social .container div img {
-    margin: auto;
-  }
 }
