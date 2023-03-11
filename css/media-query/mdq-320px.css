@@ -145,8 +145,10 @@
   }
   .form label {
     margin-top: 5px;
+    min-width: 100%;
   }
   .form label input {
+    min-width: 100%;
     width: 100%;
   }
   .contact__text-right {
